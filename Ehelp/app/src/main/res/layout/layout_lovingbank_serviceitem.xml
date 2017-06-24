@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="left">
+
+        <ImageView
+            android:id="@+id/service_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/service_bg" />
+
+
+        <TextView
+            android:id="@+id/service_name"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@+id/imageView"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/coin_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:gravity="center"
+        android:layout_toRightOf="@id/first"
+        android:layout_alignTop="@id/first"/>
+
+
+
+    <Button
+        android:id="@+id/exchange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="兑换"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:layout_toRightOf="@id/coin_count"
+        android:layout_alignTop="@id/coin_count"
+        />
+
+
+
+
+</RelativeLayout>
